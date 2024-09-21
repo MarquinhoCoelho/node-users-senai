@@ -1,0 +1,29 @@
+###
+
+GET http://localhost:3333/
+
+###
+
+POST http://localhost:3333/new-jogador
+Content-Type: application/json
+
+{
+    "name": "Casemiro",
+    "position": "Volante",
+    "age": "18"
+}
+
+###
+
+PUT http://localhost:3333/alter-user/1ef55da5-af25-4642-afaf-8c14af744cdc
+Content-Type: application/json
+
+{
+    "name": "Padaria",
+    "password": "pão",
+    "profile": "ADM"
+}
+
+###
+
+DELETE http://localhost:3333/delete-user/1ef55da5-af25-4642-afaf-8c14af744cdc
